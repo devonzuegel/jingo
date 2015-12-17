@@ -63,7 +63,7 @@ Git.setup(config.get("application").git,
 
   if (os.platform() == "darwin" &&
       !config.get("application").skipGitCheck &&
-      config.get("pages").title.fromFilename && 
+      config.get("pages").title.fromFilename &&
       !semver.satisfies(version, ">=1.8.5")) {
     console.log("Your current setup uses the filename of the wiki page as the page title.");
     console.log("Unfortunately this version of git (" + version + ".x) on OSX doesn't handle");
